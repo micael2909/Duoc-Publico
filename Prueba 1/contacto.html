@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8"/>
+		<title>EGERIA</title>
+		<meta name="description" content="máscaras"/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+		<link type="text/css" rel="stylesheet" href="estilos.css">
+		<link rel="icon" type="image/png" href="logo.png" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<!--<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css">-->
+	</head>
+	<body>
+	<div class="cabecera ">
+		<div class="row">
+			<div class="col">
+				<img src="./imagen/logo.png" width="100" height="100" alt="Logo">
+				<h7 id="tituloprincipal"><b>EGERIA TRAVELS</b></h1>
+			</div>
+			<div class="col">
+				<div class="barra1">
+					<nav class="navbar navbar-expand-lg navbar-light bg-light" >
+						<a class="navbar-brand " href="#"></a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+						  <span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+						  <div class="navbar-nav col-xl" id="ses">	
+							<a class="btn btn-light mr-sm-5" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-user fa-2x mr-sm-2" aria-hidden="true" data-toggle="modal" data-target="#exampleModal"></i> Iniciar Sesión</a>
+							<a class="btn btn-light mr-sm-5" href=""><i class="fa fa-paper-plane fa-2x mr-sm-2" aria-hidden="true"></i>Mis viajes</a>
+							<a class="btn btn-light mr-sm-5" href="contacto.html"><i class="fa fa-question-circle fa-2x mr-sm-2" aria-hidden="true"></i>Ayuda</a>
+						  </div>
+						</div>
+					</nav>
+				</div>
+			</div>
+			<div class="w-100"></div>
+			<div class="col" id="ee">
+				<div class="barr2">
+					<nav class="navbar navbar-expand-lg navbar-light bg-light">
+						<a class="navbar-brand" href="#"></a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+						  <span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+						  <div class="navbar-nav col-xl">
+							<a class="nav-link mr-sm-5" href="index.html"><i class="fa fa-plane fa-2x mr-sm-2" aria-hidden="true"></i> Vuelos</a>
+							<a class="nav-link mr-sm-5" href="paquetes.html"><i class="fa fa-shopping-bag fa-2x mr-sm-2" aria-hidden="true"></i>Paquetes</a>
+							<a class="nav-link mr-sm-5" href="alojamiento.html"><i class="fa fa-bed fa-2x mr-sm-2" aria-hidden="true"></i>Alojamiento</a>
+							<a class="nav-link mr-sm-5" href="ofertas.html"><i class="fa fa-binoculars fa-2x mr-sm-2" aria-hidden="true"></i>Ofertas</a>
+							<a class="nav-link mr-sm-5" href="asistenciaDeViaje.html"><i class="fa fa-phone fa-2x mr-sm-2" aria-hidden="true"></i> Asistencia de viajes</a>
+							<a class="nav-link mr-sm-5" href="traslado.html"><i class="fa fa-bus fa-2x mr-sm-2" aria-hidden="true"></i> Traslados</a>
+						  </div>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+	<form>
+		<div class="container  mt-3 pt-3">
+		<div class="form-row">
+			<div class="form-group fa col-md-6">
+			  <label for="inputEmail4">Nombre Completo*</label>
+			  <input type="text" class="form-control" id="inputEmail4" placeholder=" &#xf007; Ingrese nombre">
+			</div>
+			<div class="form-group fa col-md-6">
+			  <label for="inputPassword4">Rut*</label>
+			  <input type="text" class="form-control" id="inputPassword4" placeholder=" &#xf471; Ingrese rut">
+			</div>
+		  </div>
+		  <div class="form-row">
+			<div class="form-group fa col-md-6 mt-3">
+			  <label for="inputCity">Correo Electronico*</label>
+			  <input type="email" class="form-control" id="inputEmail14" placeholder=" &#xf0e0; Ingrese correo">
+			</div>
+			<div class="form-group col-md-4 mt-2">
+			  <label for="inputState">Motivo*</label>
+			  <select id="inputState" class="form-control fa">
+				<option class="fa" selected> &#xf128; Dudas y/o consultas</option>
+				<option>Comentarios y sugerencias</option>
+				<option>Reclamos</option>
+			  </select>
+			</div>
+			<div class="form-group fa col-md-2 mt-3">
+			  <label for="inputZip">Telefono*</label>
+			  <input type="text" class="form-control" id="inputZip" placeholder=" &#xf095; Ingrese telefóno" >
+			</div>
+		  </div>
+		  <div class="form-group ">
+			<label for="exampleFormControlTextarea1" >Ingrese sus comentarios*</label>
+			<textarea class="form-control fa" id="exampleFormControlTextarea1"> &#xf044; </textarea>
+		  </div>
+		  <button type="submit" class="btn btn-primary">Contactar</button>
+			  </label>
+			</div>
+		  </div>
+		</form>
+	</div>
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="exampleModalLabel">Ingresa a Tu Cuenta</h5>
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+			<div class="modal-body">
+			  <div class="form-group fa">
+				<label for="exampleInputEmail1">Correo Electrónico</label>
+				<input type="email" class="form-control fa" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder=" &#xf0e0; Ingrese correo">
+				<div class="form-group fa">
+				  <label for="exampleInputEmail1">Contraseña</label>
+				  <input type="password" class="form-control fa" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder=" &#xf13e; Ingrese correo">
+				</div>
+			  </div>
+			</div>
+			<div class="modal-footer">
+			  <div class="form-group form-check">
+				<input type="checkbox" class="form-check-input" id="exampleCheck1">
+				<label class="form-check-label" for="exampleCheck1">Recordarme</label>
+			  </div>
+			  <button type="submit" class="btn btn-primary">Aceptar</button>
+			</div>
+		  </div>
+		</div>
+	</div>
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+			<h5 class="modal-title" id="exampleModalLabel">Ingresa a Tu Cuenta</h5>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+			</div>
+			<div class="modal-body">
+			<div class="form-group">
+				<label for="exampleInputEmail1">Correo Electrónico</label>
+				<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+				<div class="form-group">
+				
+	
+				<label for="exampleInputEmail1">Contraseña</label>
+				<input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+				</div>
+			</div>
+			</div>
+			<div class="modal-footer">
+			<div class="form-group form-check">
+				<input type="checkbox" class="form-check-input" id="exampleCheck1">
+				<label class="form-check-label" for="exampleCheck1">Recordarme</label>
+			</div>
+			<button type="submit" class="btn btn-primary">Aceptar</button>
+			</div>
+		</div>
+		</div>
+	</div>
+	</body>
+	<footer>
+		<div class="container mt-5 pt-5 text-center">
+			<a href="https://www.instagram.com/?hl=es-la" target="_blank"><i class="fa fa-instagram fa-1x mr-sm-5" id="icon1" aria-hidden="true"></i></a>
+			<a href="https://es-la.facebook.com/" target="_blank"><i class="fa fa-facebook-official fa-1x mr-sm-5" id="icon1" aria-hidden="true"></i></a>
+			<a href="https://twitter.com/?lang=es" target="_blank"><i class="fa fa-twitter fa-1x mr-sm-5" id="icon1" aria-hidden="true"></i></a>
+			<a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube-play fa-1x mr-sm-5" id="icon1" aria-hidden="true"></i></a>
+			<a href="https://www.reddit.com/" target="_blank"><i class="fa fa-reddit-alien fa-1x mr-sm-5" id="icon1" aria-hidden="true"></i></a>
+			<a href="https://web.telegram.org/#/login" target="_blank"><i class="fa fa-telegram fa-1x mr-sm-5" id="icon1" aria-hidden="true"></i></a>
+			<a href="https://web.whatsapp.com/" target="_blank"><i class="fa fa-whatsapp fa-1x mr-sm-5" id="icon1" aria-hidden="true"></i></a>
+		</div>
+		<div class="container mt-3 pt-3" id="infofinal">
+			<hr>
+			<div class="row">
+				<div class="col-sm">
+					<h6><b>Somos Egeria</b></h6>
+					<h6><small>Nuestro teléfono</small></h6>
+					<h6><small>Contacto con la empresa</small></h6>
+					<h6><small>Trabaja en Egeria</small></h6>
+					<h6><small>Relación con inversores</small></h6>
+					<h6><small>Sobre Egeria</small></h6>
+			  	</div>
+			  	<div class="col-sm">
+					<h6><b>Confianza en tus compras</b></h6>
+					<h6><small>Condiciones de compra</small></h6>
+					<h6><small>Política de seguridad</small></h6>
+					<h6><small>Derechos y obligaciones del pasajero</small></h6>
+					<h6><small>Chile compra</small></h6>
+			  	</div>
+			  	<div class="col-sm">
+					<h6><b>Potencia tu negocio</b></h6>
+					<h6><small>Agrega tu flota</small></h6>
+					<h6><small>Programa de agencias afiliadas</small></h6>
+					<h6><small>Programa de red de afiliados</small></h6>
+			  	</div>
+			  	<div class="col-sm">
+					<h6><b>NAVEGAR EN EL SITIO DE:</b></h6>
+					<form class="form-inline">
+						<label class="my-1 mr-2" for="inlineFormCustomSelectPref"></label>
+						<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+						<option selected>Chile</option>
+						<option value="1">Argentina</option>
+						<option value="2">Brazil</option>
+						<option value="3">Bolivia</option>
+						<option value="3">Perú</option>
+						<option value="3">Uruguay</option>
+						<option value="3">Estados Unidos</option>
+						<option value="3">México</option>
+						</select>
+			  	</div>
+			</div>
+		</div>
+	</footer>
+</html>

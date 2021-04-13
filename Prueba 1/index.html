@@ -11,26 +11,27 @@
 		<link rel="icon" type="image/png" href="logo.png" />
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 		<!--<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css">-->
+		<link rel='stylesheet' type='text/css' media='screen' href='fontawesome-free/css/all.min.css'>
 	</head>
 	<body>
-	<div class="cabecera ">
+	<div class="cabecera" id="cabe">
 		<div class="row">
 			<div class="col">
-				<img src="logo.png" width="100" height="100" alt="">
-				<h7>EGERIA TRAVELS</h1>
+				<img src="./imagen/logo.png" width="100" height="100" alt="Logo">
+				<h7 id="tituloprincipal"><b>EGERIA TRAVELS</b></h1>
 			</div>
 			<div class="col">
-				<div class="barra1">
-					<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<div class="barra1" >
+					<nav class="navbar navbar-expand-lg navbar-light bg-light" >
 						<a class="navbar-brand " href="#"></a>
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 						  <span class="navbar-toggler-icon"></span>
 						</button>
 						<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-						  <div class="navbar-nav col-xl">
-							<a class="nav-link mr-sm-5" href=""><i class="fa fa-user fa-2x mr-sm-2" aria-hidden="true"></i> Iniciar sesión</a>
-							<a class="nav-link mr-sm-5" href="#"><i class="fa fa-paper-plane fa-2x mr-sm-2" aria-hidden="true"></i>Mis viajes</a>
-							<a class="nav-link" href="Contacto1.html"><i class="fa fa-question-circle fa-2x mr-sm-2" aria-hidden="true"></i>Ayuda</a>
+						  <div class="navbar-nav col-xl" id="ses">	
+							<a class="btn btn-light mr-sm-5" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-user fa-2x mr-sm-2" aria-hidden="true" data-toggle="modal" data-target="#exampleModal"></i> Iniciar Sesión</a>
+							<a class="btn btn-light mr-sm-5" href=""><i class="fa fa-paper-plane fa-2x mr-sm-2" aria-hidden="true"></i>Mis viajes</a>
+							<a class="btn btn-light mr-sm-5" href="contacto.html"><i class="fa fa-question-circle fa-2x mr-sm-2" aria-hidden="true"></i>Ayuda</a>
 						  </div>
 						</div>
 					</nav>
@@ -46,12 +47,12 @@
 						</button>
 						<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 						  <div class="navbar-nav col-xl">
-							<a class="nav-link active mr-sm-5" href="/index.html" target="_self"><i class="fa fa-plane fa-2x mr-sm-2" aria-hidden="true"></i> Vuelos<span class="sr-only">(current)</span></a>
-							<a class="nav-link mr-sm-5" href="Paquetes.html"><i class="fa fa-shopping-bag fa-2x mr-sm-2" aria-hidden="true"></i>Paquetes</a>
-							<a class="nav-link mr-sm-5" href=""><i class="fa fa-bed fa-2x mr-sm-2" aria-hidden="true"></i>Alojamiento</a>
-							<a class="nav-link mr-sm-5" href="Ofertas.html"><i class="fa fa-binoculars fa-2x mr-sm-2" aria-hidden="true"></i>Ofertas</a>
-							<a class="nav-link mr-sm-5" href="AsistenciaDeViaje.html"><i class="fa fa-phone fa-2x mr-sm-2" aria-hidden="true"></i> Asistencia de viajes</a>
-							<a class="nav-link mr-sm-5" href=""><i class="fa fa-bus fa-2x mr-sm-2" aria-hidden="true"></i> Traslados</a>
+							<a class="nav-link active mr-sm-5" href=""><i class="fa fa-plane fa-2x mr-sm-2" aria-hidden="true"></i> Vuelos<span class="sr-only">(current)</span></a>
+							<a class="nav-link mr-sm-5" href="paquetes.html"><i class="fa fa-shopping-bag fa-2x mr-sm-2" aria-hidden="true"></i>Paquetes</a>
+							<a class="nav-link mr-sm-5" href="alojamiento.html"><i class="fa fa-bed fa-2x mr-sm-2" aria-hidden="true"></i>Alojamiento</a>
+							<a class="nav-link mr-sm-5" href="ofertas.html"><i class="fa fa-binoculars fa-2x mr-sm-2" aria-hidden="true"></i>Ofertas</a>
+							<a class="nav-link mr-sm-5" href="asistenciaDeViaje.html"><i class="fa fa-phone fa-2x mr-sm-2" aria-hidden="true"></i> Asistencia de viajes</a>
+							<a class="nav-link mr-sm-5" href="traslado.html"><i class="fa fa-bus fa-2x mr-sm-2" aria-hidden="true"></i> Traslados</a>
 						  </div>
 						</div>
 					</nav>
@@ -62,22 +63,23 @@
 	<section class="formulario mt-3 pt-3">
 		<div class="container"><hr></div>
 		<div class="container mt-3 pt-3 mb-3" id="formu">
-			<div class="container">
+			<div class="container text-white">
 				<div class="row">
 				  	<div class="col">
 						<h6>Pasaje de avión con reserva flexible</h6>
 				  	</div>
 				  	<div class="col mt-1">
-						<div class="btn-group btn-group-toggle" data-toggle="buttons">
-							<label class="btn btn-warning active">
-								<input type="radio" name="options" id="option1" checked> Ida y vuelta
-							</label>
-							<label class="btn btn-warning">
-							  	<input type="radio" name="options" id="option2"> Solo ida
-							</label>
-							<label class="btn btn-warning">
-							  	<input type="radio" name="options" id="option3"> Multidestino
-							</label>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+							<label class="form-check-label" for="inlineRadio1"><small>Ida y vuelta</small></label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+							<label class="form-check-label" for="inlineRadio2"><small>Solo ida</small></label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+							<label class="form-check-label" for="inlineRadio3"><small>Multidestino</small></label>
 						</div>
 				  	</div>
 				</div>
@@ -85,8 +87,8 @@
 				  	<div class="col mt-1 pt-1">
 						<form class="form-inline">
 							<label class="my-1 mr-2" for="inlineFormCustomSelectPref">ORIGEN</label>
-							<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-								<option selected>Santiago de Chile</option>
+							<select class="custom-select fa my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+								<option class="fa" selected > &#xf08d; Santiago de Chile</option>
 								<option value="1">San Pablo, Brasil</option>
 								<option value="2">Miami, Estados Unidos</option>
 								<option value="3">New York, Estados Unidos</option>
@@ -95,29 +97,40 @@
 				  	<div class="col mt-1 pt-1">
 						<form class="form-inline">
 							<label class="my-1 mr-2" for="inlineFormCustomSelectPref">DESTINO</label>
-							<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-								<option selected>Ingresa destino</option>
+							<select class="custom-select fa my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+								<option class="fa" selected> &#xf041; Ingresa destino</option>
 								<option value="1">New York, Estados Unidos</option>
 								<option value="2">Miami, Estados Unidos</option>
 								<option value="3">Río de Janeiro, Brasil</option>
 							</select>
 				  	</div>
-				  	<div class="col mt-2 pt-1">
+				  	<div class="col-sm mt-3 pt-1">
 						<form>
-							<div class="form-group">
+							<div class="form-group fa">
 								<label for="formGroupExampleInput">FECHA IDA</label>
-								<input type="date" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+								<input type="text" class="form-control fa" id="formGroupExampleInput" placeholder=" &#xf073; Ingrese fecha">
+							</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+							<label class="form-check-label" for="defaultCheck1"><small>Todavía no decido la fecha</small></label>
+						</div>
+				  	</div>
+					<div class="col mt-3 pt-1">
+						<form>
+							<div class="form-group fa">
+								<label for="formGroupExampleInput">REGRESO</label>
+								<input type="text" class="form-control fa" id="formGroupExampleInput" placeholder="&#xf073; Ingrese fecha">
 							</div>
 				  	</div>
-					<div class="col mt-2 pt-1">
+					<div class="col mt-3 pt-1">
 						<form>
-							<div class="form-group">
-								<label for="formGroupExampleInput">FECHA REGRESO</label>
-								<input type="date" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+							<div class="form-group fa">
+								<label for="formGroupExampleInput">PASAJEROS</label>
+								<input type="text" class="form-control fa" id="formGroupExampleInput" placeholder="&#xf007; Pasajeros">
 							</div>
 				  	</div>
 					<div class="col">
-						<button type="button" class="btn btn-danger text-center">BUSCAR</button>
+						<a href="buscar.html"><center><button type="button" class="btn btn-danger text-center" >BUSCAR</button></center></a>
 				  	</div>
 				</div>
 			</div>
@@ -183,7 +196,7 @@
 				  	</div>
 			</div>
 			<div class="card">
-				<img class="card-img-top" src="miami3.png" alt="Card image cap">
+				<img class="card-img-top" src="./miami3.png" alt="Card image cap">
 				  	<div class="card-body">
 						<h6>ALOJAMIENTO</h6>
 						<h5 class="card-title"> en Miami desde Santiago de Chile</h5>
@@ -191,6 +204,45 @@
 						<h5 class="card-title"> $ 21.675</h5>
 			  		</div>
 			</div>
+		</div>
+	</div>
+	<div class="container mt-3 pt-3" >
+		<div class="delimitador">
+			<div class="contenedor">
+				<iframe src="./imagen/manhattanpage.mp4"></iframe>
+			</div>
+		</div>
+	</div>
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+			<h5 class="modal-title" id="exampleModalLabel">Ingresa a Tu Cuenta</h5>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+			</div>
+			<div class="modal-body">
+			<div class="form-group">
+				<label for="exampleInputEmail1">Correo Electrónico</label>
+				<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+				<div class="form-group">
+				
+	
+				<label for="exampleInputEmail1">Contraseña</label>
+				<input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+				</div>
+			</div>
+			</div>
+			<div class="modal-footer">
+			<div class="form-group form-check">
+				<input type="checkbox" class="form-check-input" id="exampleCheck1">
+				<label class="form-check-label" for="exampleCheck1">Recordarme</label>
+			</div>
+			<button type="submit" class="btn btn-primary">Aceptar</button>
+			</div>
+		</div>
 		</div>
 	</div>
 	</body>
@@ -225,8 +277,8 @@
 			  	<div class="col-sm">
 					<h6><b>Potencia tu negocio</b></h6>
 					<h6><small>Agrega tu flota</small></h6>
-					<h6><small>Programa de agencias afiliadas</small></h6>
-					<h6><small>Programa de red de afiliados</small></h6>
+					<h6><small>Programa agencias afiliadas</small></h6>
+					<h6><small>Programa red de afiliados</small></h6>
 			  	</div>
 			  	<div class="col-sm">
 					<h6><b>NAVEGAR EN EL SITIO DE:</b></h6>
