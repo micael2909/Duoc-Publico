@@ -1,0 +1,98 @@
+
+/*Estilos de Gustavo*/
+body{
+	background: rgb(231, 233, 235);
+}
+.barraprincipal{
+	background: teal;
+	margin: 20px 0px;
+}
+.barra1{
+	margin: 20px 20px 20px 20px;
+}
+a:hover .fa{
+	-webkit-transform:scale(1.3);
+	-moz-transform:scale(1.3);
+	-ms-transform:scale(1.3);
+	-o-transform:scale(1.3);
+	transform:scale(1.3);
+}
+#icon1:hover {
+	-webkit-transform:scale(3);
+	-moz-transform:scale(3);
+	-ms-transform:scale(3);
+	-o-transform:scale(3);
+	transform:scale(3);
+}
+.formulario{
+	background: rgb(231, 233, 235);
+}
+#formu{
+	background: rgb(53, 121, 247);
+}
+.card{
+	border-radius: 4%;
+}
+/*Estilos de Micael*/
+#formu{
+	background: rgb(53, 121, 247);
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+}
+
+.boton-seleccion{
+	margin-left: 10px;
+}
+
+.boton-seleccion2{
+	margin-left: 5px;
+}
+
+.form-paquetes{
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.texto-a-la-izquierda{
+	text-align: left;
+}
+
+.form-dropdown-habitaciones{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.ofertas{
+	max-width: 60%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.titulo-oferta{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 10px;
+	background-color:white;
+	border-radius: 10px;
+}
+
+.boton-iraalojamiento{
+	margin-top: 10px;
+}
+
+img.mediana{
+	max-width: 60%;
+}
+
+.barra1{
+	margin: 20px 20px 20px 20px;
+}
+
+.carrusel-asistencia{
+	margin-top: 20px;
+	max-width: 40%;
+}
+
+.card-asistencia{
+	margin-top: 20px;
+}

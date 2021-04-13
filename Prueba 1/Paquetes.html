@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8"/>
+		<title>EGERIA</title>
+		<meta name="description" content="máscaras"/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+		<link type="text/css" rel="stylesheet" href="estilos2.css">
+		<link rel="icon" type="image/png" href="logo.png" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<!--<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css">-->
+	</head>
+	<body>
+	<div class="cabecera">
+		<div class="row">
+			<div class="col">
+				<img src="logo.png" width="100" height="100" alt="">
+				<h7>EGERIA TRAVELS</h1>
+			</div>
+			<div class="col">
+				<div class="barra1">
+					<nav class="navbar navbar-expand-lg navbar-light bg-light">
+						<a class="navbar-brand " href="#"></a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+						  <span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+						  <div class="navbar-nav col-xl">
+							<button type="button" class="btn btn-light mr-sm-5" data-toggle="modal" data-target="#exampleModal">
+								<i class="fa fa-user fa-2x mr-sm-2" aria-hidden="true"></i>
+								Iniciar Sesion
+							</button>
+							<button type="button" class="btn btn-light mr-sm-5">
+								<i class="fa fa-paper-plane fa-2x mr-sm-2" aria-hidden="true"></i>
+								Mis Viajes
+							</button>
+							<button type="button" class="btn btn-light mr-sm-5">
+								<i class="fa fa-question-circle fa-2x mr-sm-2" aria-hidden="true"></i>
+								<a href="Contacto1.html" class="streched-link"></a>
+								Ayuda
+							</button>
+							<!--<a class="nav-link mr-sm-5" href=""><i class="fa fa-user fa-2x mr-sm-2" aria-hidden="true"></i> Iniciar sesión</a>-->
+							<!--<a class="nav-link mr-sm-5" href=""><i class="fa fa-paper-plane fa-2x mr-sm-2" aria-hidden="true"></i>Mis viajes</a>-->
+							<!--<a class="nav-link" href="Contacto1.html"><i class="fa fa-question-circle fa-2x mr-sm-2" aria-hidden="true"></i>Ayuda</a>-->
+						  </div>
+						</div>
+					</nav>
+				</div>
+			</div>
+			<div class="w-100"></div>
+			<div class="col" id="ee">
+				<div class="barr2">
+					<nav class="navbar navbar-expand-lg navbar-light bg-light">
+						<a class="navbar-brand" href=""></a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+						  <span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+						  <div class="navbar-nav col-xl">
+							<a class="nav-link mr-sm-5" href="index.html"><i class="fa fa-plane fa-2x mr-sm-2" aria-hidden="true"></i> Vuelos</a>
+							<a class="nav-link active mr-sm-5" href="Paquetes.html" target="_self"><i class="fa fa-shopping-bag fa-2x mr-sm-2" aria-hidden="true"></i>Paquetes <span class="sr-only">(current)</span></a>
+							<a class="nav-link mr-sm-5" href=""><i class="fa fa-bed fa-2x mr-sm-2" aria-hidden="true"></i>Alojamiento</a>
+							<a class="nav-link mr-sm-5" href="Ofertas.html"><i class="fa fa-binoculars fa-2x mr-sm-2" aria-hidden="true"></i>Ofertas</a>
+							<a class="nav-link mr-sm-5" href="AsistenciaDeViaje.html"><i class="fa fa-phone fa-2x mr-sm-2" aria-hidden="true"></i> Asistencia de viajes</a>
+							<a class="nav-link mr-sm-5" href=""><i class="fa fa-bus fa-2x mr-sm-2" aria-hidden="true"></i> Traslados</a>
+						  </div>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+	<section class="formulario mt-3 pt-3">
+		<!--Aqui parte mi codigo-->
+		<div class="container"><hr></div>
+		<div class="container mt-3 pt-3 mb-3" id="formu">
+			<div class="container">
+				<div class="row">
+				  	<div class="col">
+						<h3>Paquetes Turísticos</h3>
+					</div>
+					<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+						<li class="nav-item boton-seleccion">
+						  <a type="button" class="nav-link active btn-warning" id="pills-home-tab" data-toggle="pill" href="#pills-paquete1" role="tab" aria-controls="pills-home" aria-selected="true">Vuelo + Alojamiento</a>
+						</li>
+						<li class="nav-item boton-seleccion2">
+						  <a type="button" class="nav-link btn-warning" id="pills-profile-tab" data-toggle="pill" href="#pills-paquete2" role="tab" aria-controls="pills-profile" aria-selected="false">Vuelo + 2 Alojamientos</a>
+						</li>
+						<li class="nav-item boton-seleccion2">
+						  <a type="button" class="nav-link btn-warning" id="pills-contact-tab" data-toggle="pill" href="#pills-paquete3" role="tab" aria-controls="pills-contact" aria-selected="false">Vuelo + Auto</a>
+						</li>
+					</ul>
+				</div>
+				<div class="tab-content" id="pills-tabContent">
+					<div class="tab-pane fade show active" id="pills-paquete1" role="tabpanel" aria-labelledby="pills-home-tab">
+						<div class="form-paquetes">
+							<form>
+								<div class="form-row">
+									<div class="col texto-a-la-izquierda mt-1 pt-1">
+										<h6>Origen</h6>
+										<input type="text" class="form-control" placeholder="Ingrese una Ciudad">
+									</div>
+									<div class="col texto-a-la-izquierda mt-1 pt-1">
+										<h6>Destino</h6>
+										<input type="text" class="form-control" placeholder="Ingrese una Ciudad">
+									</div>
+									<div class="col texto-a-la-izquierda mt-1 pt-1">
+										<h6>Fechas</h6>
+										<div class="input-group">
+											<input type="date" aria-label="First name" class="form-control" placeholder="Ida">
+											<input type="date" aria-label="Last name" class="form-control" placeholder="Vuelta">
+										</div>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="col texto-a-la-izquierda mt-1 pt-1">
+										<h6>Habitaciones</h6>
+										<div class="dropdown">
+											<button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												Ingrese Cantidad
+											</button>
+											<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+												<form class="dropdown-menu p-4">
+													<div class="form-group form-dropdown-habitaciones">
+													  <label for="exampleDropdownFormEmail2">Habitaciones</label>
+													  <input type="number" min= "1" class="form-control"placeholder="1">
+													</div>
+													<div class="form-group form-dropdown-habitaciones">
+														<label for="exampleDropdownFormEmail2">Adultos</label>
+														<input type="number" min= "1" class="form-control"placeholder="1">
+													</div>
+													<div class="form-group form-dropdown-habitaciones">
+														<label for="exampleDropdownFormEmail2">Niños</label>
+														<input type="number" min= "0" class="form-control" placeholder="0">
+													</div>
+													<button type="submit" class="btn btn-primary form-dropdown-habitaciones">Aplicar</button>
+												</form>
+											</div>
+										</div>
+										<div class="mt-1 p1">
+											<a class="btn btn-danger btn-lg" href="sugerencias-paquetes.html" role="button">Buscar</a>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="pills-paquete2" role="tabpanel" aria-labelledby="pills-profile-tab">
+						<div class="form-paquetes">
+							<form>
+								<h5 class="texto-a-la-izquierda">Vuelo Ida y Vuelta</h5>
+								<div class="form-row">
+									<div class="col texto-a-la-izquierda mt-1 pt-1">
+										<h6>Origen</h6>
+										<input type="text" class="form-control" placeholder="Ingrese una Ciudad">
+									</div>
+									<div class="col texto-a-la-izquierda mt-1 pt-1">
+										<h6>Destino</h6>
+										<input type="text" class="form-control" placeholder="Ingrese una Ciudad">
+									</div>
+									<div class="col texto-a-la-izquierda mt-1 pt-1">
+										<h6>Fechas</h6>
+										<div class="input-group">
+											<input type="date" aria-label="First name" class="form-control" placeholder="Ida">
+											<input type="date" aria-label="Last name" class="form-control" placeholder="Vuelta">
+										</div>
+									</div>
+								</div>
+							</form>
+							<form>
+								<h5 class="texto-a-la-izquierda">Elige Dónde Alojar</h5>
+								<div class="form-row">
+									<div class="col texto-a-la-izquierda mt-1 pt-1">
+										<h6>Primer Destino</h6>
+										<input type="text" class="form-control" placeholder="Ingrese una Ciudad">
+									</div>
+									<div class="col texto-a-la-izquierda mt-1 pt-1">
+										<h6>Fechas</h6>
+										<div class="input-group">
+											<input type="date" aria-label="First name" class="form-control" placeholder="Ida">
+											<input type="date" aria-label="Last name" class="form-control" placeholder="Vuelta">
+										</div>
+									</div>
+									  <div class="col texto-a-la-izquierda mt-1 pt-1">
+										<h6>Segundo Destino</h6>
+										<input type="text" class="form-control" placeholder="Ingrese una Ciudad">
+									  </div>
+									  <div class="col texto-a-la-izquierda mt-1 pt-1">
+										<h6>Fechas</h6>
+										<div class="input-group">
+											<input type="date" aria-label="First name" class="form-control" placeholder="Ida">
+											<input type="date" aria-label="Last name" class="form-control" placeholder="Vuelta">
+										</div>
+									</div>
+								</div>
+							</form>
+							<form>
+								<div class="form-row">
+									<div class="col texto-a-la-izquierda mt-1 pt-1">
+										<h6>Habitaciones</h6>
+										<div class="dropdown">
+											<button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												Ingrese Cantidad
+											</button>
+											<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+												<form class="dropdown-menu p-4">
+													<div class="form-group form-dropdown-habitaciones">
+													  <label for="exampleDropdownFormEmail2">Habitaciones</label>
+													  <input type="number" min= "1" class="form-control"placeholder="1">
+													</div>
+													<div class="form-group form-dropdown-habitaciones">
+														<label for="exampleDropdownFormEmail2">Adultos</label>
+														<input type="number" min= "1" class="form-control"placeholder="1">
+													</div>
+													<div class="form-group form-dropdown-habitaciones">
+														<label for="exampleDropdownFormEmail2">Niños</label>
+														<input type="number" min= "0" class="form-control" placeholder="0">
+													</div>
+													<button type="submit" class="btn btn-primary form-dropdown-habitaciones">Aplicar</button>
+												</form>
+											</div>
+										</div>
+										<div class="mt-1 p1">
+											<a class="btn btn-danger btn-lg" href="sugerencias-paquetes.html" role="button">Buscar</a>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="pills-paquete3" role="tabpanel" aria-labelledby="pills-contact-tab">
+						<div class="form-paquetes">
+							<form>
+								<div class="form-row">
+									<div class="col texto-a-la-izquierda mt-1 pt-1">
+										<h6>Origen</h6>
+										<input type="text" class="form-control" placeholder="Ingrese una Ciudad">
+									</div>
+									<div class="col texto-a-la-izquierda mt-1 pt-1">
+										<h6>Destino</h6>
+										<input type="text" class="form-control" placeholder="Ingrese una Ciudad">
+									</div>
+									<div class="col texto-a-la-izquierda mt-1 pt-1">
+										<h6>Fechas</h6>
+										<div class="input-group">
+											<input type="date" aria-label="First name" class="form-control" placeholder="Ida">
+											<input type="date" aria-label="Last name" class="form-control" placeholder="Vuelta">
+										</div>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="col texto-a-la-izquierda mt-1 pt-1">
+										<h6>Pasajeros</h6>
+										<div class="dropdown">
+											<button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												Ingrese Cantidad
+											</button>
+											<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+												<form class="dropdown-menu p-4">
+													<div class="form-group form-dropdown-habitaciones">
+														<label for="exampleDropdownFormEmail2">Adultos</label>
+														<input type="number" min= "1" class="form-control"placeholder="1">
+													</div>
+													<div class="form-group form-dropdown-habitaciones">
+														<label for="exampleDropdownFormEmail2">Niños</label>
+														<input type="number" min= "0" class="form-control" placeholder="0">
+													</div>
+													<button type="submit" class="btn btn-primary form-dropdown-habitaciones">Aplicar</button>
+												</form>
+											</div>
+										</div>
+										<div class="mt-1 p1">
+											<a class="btn btn-danger btn-lg" href="sugerencias-paquetes.html" role="button">Buscar</a>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="container mt-3 pt-3">
+		<h6>Desde Santiago de Chile</h4>
+		<h2>Elige el Paquete Turístico que más te guste</h2>
+	</div>
+	<div class="container mt-3 pt-3">
+		<div class="card-deck">
+			<div class="card">
+				<img class="card-img-top" src=".\imagen\londres.jpg" alt="Card image cap">
+				  	<div class="card-body">
+						<h6>Vuelo + Alojamiento <span class="badge badge-primary">7 Noches</span></h6>
+						<h4 class="card-title"> Paquetes a Londres</h4>
+						<hr>
+						<h6 class="card-text"><small class="text-muted">Precio Final Por Persona</small></h6>
+						<h5 class="card-title"> $ 795.426</h5>
+				  	</div>
+			</div>
+			<div class="card">
+				<img class="card-img-top" src=".\imagen\venecia.jpg" alt="Card image cap">
+				  	<div class="card-body">
+						<h6>Vuelo + Alojamiento <span class="badge badge-primary">10 Noches</span></h6>
+						<h4 class="card-title"> Paquetes a Venecia</h4>
+						<hr>
+						<h6 class="card-text"><small class="text-muted">Precio Final Por Persona</small></h6>
+						<h5 class="card-title"> $ 1.050.498</h5>
+				  	</div>
+			</div>
+			<div class="card">
+				<img class="card-img-top" src=".\imagen\nuevayork.jpg" alt="Card image cap">
+				  	<div class="card-body">
+						<h6>Vuelo + Alojamiento <span class="badge badge-primary">15 Noches</span></h6>
+						<h4 class="card-title"> Paquetes a Nueva York</h4>
+						<hr>
+						<h6 class="card-text"><small class="text-muted">Precio Final Por Persona</small></h6>
+						<h5 class="card-title"> $ 1.048.323</h5>
+				  	</div>
+			</div>
+		</div>
+	</div>
+	<div class="container"><hr></div>
+	<div class="container mt-3 pt-3">
+		<div class="card-deck">
+			<div class="card">
+				<img class="card-img-top" src=".\imagen\cancunmiami.jpg" alt="Card image cap">
+				  	<div class="card-body">
+						<h6>Vuelo + 2 Alojamientos <span class="badge badge-primary">7 Noches</span></h6>
+						<h4 class="card-title"> Paquetes a Cancún - Miami</h4>
+						<hr>
+						<h6 class="card-text"><small class="text-muted">Precio Final Por Persona</small></h6>
+						<h5 class="card-title"> $ 1.064.197</h5>
+				  	</div>
+			</div>
+			<div class="card">
+				<img class="card-img-top" src=".\imagen\acapulcolasvegas.jpg" alt="Card image cap">
+				  	<div class="card-body">
+						<h6>Vuelo + Alojamiento <span class="badge badge-primary">10 Noches</span></h6>
+						<h4 class="card-title"> Paquetes a Acapulco - Las Vegas</h4>
+						<hr>
+						<h6 class="card-text"><small class="text-muted">Precio Final Por Persona</small></h6>
+						<h5 class="card-title"> $ 2.235.208</h5>
+				  	</div>
+			</div>
+			<div class="card">
+				<img class="card-img-top" src=".\imagen\tokioseul.jpg" alt="Card image cap">
+				  	<div class="card-body">
+						<h6>Vuelo + Alojamiento <span class="badge badge-primary">15 Noches</span></h6>
+						<h4 class="card-title"> Paquetes a Tokio - Seúl</h4>
+						<hr>
+						<h6 class="card-text"><small class="text-muted">Precio Final Por Persona</small></h6>
+						<h5 class="card-title"> $ 1.132.886</h5>
+				  	</div>
+			</div>
+		</div>
+	</div>
+	<div class="container"> <hr></div>
+	<div class="card ofertas container bg-primary border-dark" href="Ofertas.html">
+		<img src=".\imagen\ofertas.jpg" class="card-img" alt="...">
+		<div class="card-img-overlay">
+			<h4 class="card-title">Ofertas de Viajes por todo el mundo</h4>
+			<p class="card-text">Aprovecha las increibles ofertas que tenemos para ti</p>
+			<a href="Ofertas.html" class="btn btn-primary active" role="button" aria-pressed="true">Ver Aquí</a>
+		</div>
+	</div>
+	<!--Aqui termina mi codigo-->
+
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+			<h5 class="modal-title" id="exampleModalLabel">Ingresa a Tu Cuenta</h5>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+			</div>
+			<div class="modal-body">
+			<div class="form-group">
+				<label for="exampleInputEmail1">Correo Electrónico</label>
+				<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+				<div class="form-group">
+				
+	
+				<label for="exampleInputEmail1">Contraseña</label>
+				<input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+				</div>
+			</div>
+			</div>
+			<div class="modal-footer">
+			<div class="form-group form-check">
+				<input type="checkbox" class="form-check-input" id="exampleCheck1">
+				<label class="form-check-label" for="exampleCheck1">Recordarme</label>
+			</div>
+			<button type="submit" class="btn btn-primary">Aceptar</button>
+			</div>
+		</div>
+		</div>
+	</div>
+	</body>
+	<footer>
+		<div class="container mt-5 pt-5 text-center">
+			<a href="https://www.instagram.com/?hl=es-la" target="_blank"><i class="fa fa-instagram fa-1x mr-sm-5" id="icon1" aria-hidden="true"></i></a>
+			<a href="https://es-la.facebook.com/" target="_blank"><i class="fa fa-facebook-official fa-1x mr-sm-5" id="icon1" aria-hidden="true"></i></a>
+			<a href="https://twitter.com/?lang=es" target="_blank"><i class="fa fa-twitter fa-1x mr-sm-5" id="icon1" aria-hidden="true"></i></a>
+			<a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube-play fa-1x mr-sm-5" id="icon1" aria-hidden="true"></i></a>
+			<a href="https://www.reddit.com/" target="_blank"><i class="fa fa-reddit-alien fa-1x mr-sm-5" id="icon1" aria-hidden="true"></i></a>
+			<a href="https://web.telegram.org/#/login" target="_blank"><i class="fa fa-telegram fa-1x mr-sm-5" id="icon1" aria-hidden="true"></i></a>
+			<a href="https://web.whatsapp.com/" target="_blank"><i class="fa fa-whatsapp fa-1x mr-sm-5" id="icon1" aria-hidden="true"></i></a>
+		</div>
+		<div class="container mt-3 pt-3" id="infofinal">
+			<hr>
+			<div class="row">
+				<div class="col-sm">
+					<h6><b>Somos Egeria</b></h6>
+					<h6><small>Nuestro teléfono</small></h6>
+					<h6><small>Contacto con la empresa</small></h6>
+					<h6><small>Trabaja en Egeria</small></h6>
+					<h6><small>Relación con inversores</small></h6>
+					<h6><small>Sobre Egeria</small></h6>
+			  	</div>
+			  	<div class="col-sm">
+					<h6><b>Confianza en tus compras</b></h6>
+					<h6><small>Condiciones de compra</small></h6>
+					<h6><small>Política de seguridad</small></h6>
+					<h6><small>Derechos y obligaciones del pasajero</small></h6>
+					<h6><small>Chile compra</small></h6>
+			  	</div>
+			  	<div class="col-sm">
+					<h6><b>Potencia tu negocio</b></h6>
+					<h6><small>Agrega tu flota</small></h6>
+					<h6><small>Programa de agencias afiliadas</small></h6>
+					<h6><small>Programa de red de afiliados</small></h6>
+			  	</div>
+			  	<div class="col-sm">
+					<h6><b>NAVEGAR EN EL SITIO DE:</b></h6>
+					<form class="form-inline">
+						<label class="my-1 mr-2" for="inlineFormCustomSelectPref"></label>
+						<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+						<option selected>Chile</option>
+						<option value="1">Argentina</option>
+						<option value="2">Brazil</option>
+						<option value="3">Bolivia</option>
+						<option value="3">Perú</option>
+						<option value="3">Uruguay</option>
+						<option value="3">Estados Unidos</option>
+						<option value="3">México</option>
+						</select>
+			  	</div>
+			</div>
+		</div>
+		<div class="container mt-3 pt-3"></div>
+	</footer>
+</html>
