@@ -171,3 +171,7 @@ img.mediana{
 .card-asistencia{
 	margin-top: 20px;
 }
+
+.fechas{
+	display: inline;
+}
