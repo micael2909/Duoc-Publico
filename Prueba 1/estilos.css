@@ -72,9 +72,6 @@ iframe{
 	margin-bottom: 10px;
 	padding-bottom: 20px;
 }
-.card{
-	border-radius: 4%;
-}
 
 #caruselofertas{
   	height: 350px;
@@ -174,4 +171,10 @@ img.mediana{
 
 .fechas{
 	display: inline;
+}
+
+.img-paquete{
+	max-width: 75%;
+	padding-left: 0px;
+	padding-right: 0px;
 }
