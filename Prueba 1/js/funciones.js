@@ -263,7 +263,7 @@ function fn_ocultarEtiquetas(){
 
 }
 function fn_mostrarEtiquetas(){
-  var nombre = document.getElementById('txt_nombre').value;
+  var nombre = document.getElementById('txt_nombre_reg').value;
   var correo = document.getElementById('txt_correo').value;
   var contrasena = document.getElementById('txt_contrasena').value;
   var confirmarContrasena = document.getElementById('txt_confirmarContrasena').value;
@@ -274,12 +274,12 @@ function fn_mostrarEtiquetas(){
 
           if(nombre==""){
               document.getElementById('lbl_nombre').style.visibility="visible";
-              document.getElementById('txt_nombre').classList.add("is-invalid");
+              document.getElementById('txt_nombre_reg').classList.add("is-invalid");
           }
           else{
               document.getElementById('lbl_nombre').style.visibility="hidden";
-              document.getElementById('txt_nombre').classList.remove("is-invalid");
-              document.getElementById('txt_nombre').classList.add("is-valid");
+              document.getElementById('txt_nombre_reg').classList.remove("is-invalid");
+              document.getElementById('txt_nombre_reg').classList.add("is-valid");
           }
           if(correo==""){
               document.getElementById('lbl_correo').style.visibility="visible";
@@ -336,9 +336,14 @@ function fn_mostrarEtiquetas(){
               document.getElementById('txt_confirmarContrasena').classList.add("is-invalid");
 
           }
-          if (nombre!="" && contrasena==confirmarContrasena && correo!="" && document.getElementById('rbt_radio1').checked != false && document.getElementById('rbt_radio2').checked != true){
-            document.getElementById('lbl_sucess').style.visibility="visible";
-          
+          if (nombre!="" 
+            && contrasena==confirmarContrasena 
+            && correo!="" 
+            && (document.getElementById('rbt_radio1').checked != false 
+            && document.getElementById('rbt_radio2').checked != true) 
+            || (document.getElementById('rbt_radio1').checked != true 
+            && document.getElementById('rbt_radio2').checked != false)){
+            document.getElementById('lbl_sucess').style.visibility="visible";          
           }
           else {
             document.getElementById('lbl_sucess').style.visibility="hidden";
