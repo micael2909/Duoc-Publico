@@ -12,6 +12,8 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 		<!--<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css">-->
 		<link rel='stylesheet' type='text/css' media='screen' href='fontawesome-free/css/all.min.css'>
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		
 	</head>
 	<body>
 	<div class="cabecera" id="cabe">
@@ -21,33 +23,31 @@
 				<h7 id="tituloprincipal"><b>EGERIA TRAVELS</b></h1>
 			</div>
 			<div class="col">
-				<div class="barra1" >
-					<nav class="navbar navbar-expand-lg navbar-light bg-light" >
-						<a class="navbar-brand " href="#"></a>
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+					<nav class="navbar navbar-expand-lg navbar-light bg-light rounded-bottom border">
+						<a class="navbar-brand"></a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navcontrol1" aria-controls="navcontrol1" aria-expanded="false" aria-label="Toggle navigation">
 						  <span class="navbar-toggler-icon"></span>
 						</button>
-						<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+						<div class="collapse navbar-collapse container" id="navcontrol1">
 						  <div class="navbar-nav col-xl" id="ses">	
-							<a class="btn btn-light mr-sm-5" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-user fa-2x mr-sm-2" aria-hidden="true" data-toggle="modal" data-target="#exampleModal"></i> Iniciar Sesión</a>
-							<a class="btn btn-light mr-sm-5" href=""><i class="fa fa-paper-plane fa-2x mr-sm-2" aria-hidden="true"></i>Mis viajes</a>
-							<a class="btn btn-light mr-sm-5" href="contacto.html"><i class="fa fa-question-circle fa-2x mr-sm-2" aria-hidden="true"></i>Ayuda</a>
+							<a class="btn btn-light mr-sm-4" data-toggle="modal" data-target="#modaliniciosesion"><i class="fa fa-user mr-sm-1" aria-hidden="true"></i> Iniciar Sesión</a>
+							<a class="btn btn-light mr-sm-4" data-toggle="modal" data-target="#modalregistro"><i class="fa fa-user-plus mr-sm-1" aria-hidden="true"></i> Registrarse</a>
+							<a class="btn btn-light mr-sm-4" href=""><i class="fa fa-paper-plane mr-sm-1" aria-hidden="true"></i>Mis viajes</a>
+							<a class="btn btn-light mr-sm-4" href="contacto.html"><i class="fa fa-question-circle mr-sm-1" aria-hidden="true"></i>Ayuda</a>
 						  </div>
 						</div>
 					</nav>
-				</div>
 			</div>
-			<div class="w-100"></div>
 			<div class="col" id="ee">
 				<div class="barr2">
-					<nav class="navbar navbar-expand-lg navbar-light bg-light">
+					<nav class="navbar navbar-expand-lg navbar-light bg-light rounded-lg">
 						<a class="navbar-brand" href="#"></a>
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navcontrol2" aria-controls="navcontrol2" aria-expanded="false" aria-label="Toggle navigation">
 						  <span class="navbar-toggler-icon"></span>
 						</button>
-						<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+						<div class="collapse navbar-collapse container" id="navcontrol2">
 						  <div class="navbar-nav col-xl">
-							<a class="nav-link active mr-sm-5" href=""><i class="fa fa-plane fa-2x mr-sm-2" aria-hidden="true"></i> Vuelos<span class="sr-only">(current)</span></a>
+							<a class="nav-link active mr-sm-5" href="index.html"><i class="fa fa-plane fa-2x mr-sm-2" aria-hidden="true"></i> Vuelos<span class="sr-only">(current)</span></a>
 							<a class="nav-link mr-sm-5" href="paquetes.html"><i class="fa fa-shopping-bag fa-2x mr-sm-2" aria-hidden="true"></i>Paquetes</a>
 							<a class="nav-link mr-sm-5" href="alojamiento.html"><i class="fa fa-bed fa-2x mr-sm-2" aria-hidden="true"></i>Alojamiento</a>
 							<a class="nav-link mr-sm-5" href="ofertas.html"><i class="fa fa-binoculars fa-2x mr-sm-2" aria-hidden="true"></i>Ofertas</a>
@@ -126,7 +126,7 @@
 						<form>
 							<div class="form-group fa">
 								<label for="formGroupExampleInput">Pasajeros</label>
-								<input type="number" class="form-control fa" id="formGroupExampleInput" placeholder="&#xf007; Pasajeros">
+								<input type="text" class="form-control fa" id="formGroupExampleInput" placeholder="&#xf007; Pasajeros">
 							</div>
 				  	</div>
 					<div class="col">
@@ -148,7 +148,17 @@
 						<h6>VUELOS</h6>
 						<h5 class="card-title"> a Nueva York desde Santiago de Chile</h5>
 						<p class="card-text"><small class="text-muted">DESDE</small></p>
-						<h5 class="card-title"> $ 401.990</h5>
+						<div class="container">
+							<div class="row">
+							  	<div class="col-sm">
+									<br>
+									<h5 class="card-title" id="valorPC"> $ 401.990</h5>
+							  	</div>
+							  	<div class="col-sm">
+									<a class="btn btn-danger mr-sm-5" id="btn_comprar" data-toggle="modal" data-target="#exampleModal22"><i class="fa fa-shopping-cart" aria-hidden="true" data-toggle="modal" data-target="#exampleModal22"></i> Comprar</a>
+							  	</div>
+							</div>
+						</div>	
 				  	</div>
 			</div>
 			<div class="card">
@@ -157,7 +167,17 @@
 						<h6>PAQUETES</h6>
 						<h5 class="card-title"> a Nueva York desde Santiago de Chile</h5>
 						<p class="card-text"><small class="text-muted">DESDE</small></p>
-						<h5 class="card-title"> $ 848.990</h5>
+						<div class="container">
+							<div class="row">
+							  	<div class="col-sm">
+									<br>
+									<h5 class="card-title" id="valorPC2"> $ 848.990</h5>
+							  	</div>
+							  	<div class="col-sm">
+									<a class="btn btn-danger mr-sm-5" id="btn_comprar2" data-toggle="modal" data-target="#exampleModal22"><i class="fa fa-shopping-cart" aria-hidden="true" data-toggle="modal" data-target="#exampleModal22"></i> Comprar</a>
+							  	</div>
+							</div>
+						</div>
 				  	</div>
 			</div>
 			<div class="card">
@@ -166,7 +186,17 @@
 						<h6>ALOJAMIENTO</h6>
 						<h5 class="card-title"> en Nueva York desde Santiago de Chile</h5>
 						<p class="card-text"><small class="text-muted">DESDE</small></p>
-						<h5 class="card-title"> $ 25.979</h5>
+						<div class="container">
+							<div class="row">
+							  	<div class="col-sm">
+									<br>
+									<h5 class="card-title"> $ 25.979</h5>
+							  	</div>
+							  	<div class="col-sm">
+									<a class="btn btn-danger mr-sm-5" id="btn_comprar3" data-toggle="modal" data-target="#exampleModal22"><i class="fa fa-shopping-cart" aria-hidden="true" data-toggle="modal" data-target="#exampleModal22"></i> Comprar</a>
+							  	</div>
+							</div>
+						</div>		
 					</div>
 			</div>
 		</div>
@@ -183,7 +213,17 @@
 						<h6>VUELOS</h6>
 						<h5 class="card-title"> a Miami desde Santiago de Chile</h5>
 						<p class="card-text"><small class="text-muted">DESDE</small></p>
-						<h5 class="card-title"> $ 350.990</h5>
+						<div class="container">
+							<div class="row">
+							  	<div class="col-sm">
+									<br>
+									<h5 class="card-title"> $ 350.990</h5>
+							  	</div>
+							  	<div class="col-sm">
+									<a class="btn btn-danger mr-sm-5" id="btn_comprar4" data-toggle="modal" data-target="#exampleModal22"><i class="fa fa-shopping-cart" aria-hidden="true" data-toggle="modal" data-target="#exampleModal22"></i> Comprar</a>
+							  	</div>
+							</div>
+						</div>
 				  	</div>
 			</div>
 			<div class="card">
@@ -192,7 +232,17 @@
 						<h6>PAQUETES</h6>
 						<h5 class="card-title"> a Miami desde Santiago de Chile</h5>
 						<p class="card-text"><small class="text-muted">DESDE</small></p>
-						<h5 class="card-title"> $ 653.990</h5>
+						<div class="container">
+							<div class="row">
+							  	<div class="col-sm">
+									<br>
+									<h5 class="card-title"> $ 653.990</h5>
+							  	</div>
+							  	<div class="col-sm">
+									<a class="btn btn-danger mr-sm-5" id="btn_comprar5" data-toggle="modal" data-target="#exampleModal22"><i class="fa fa-shopping-cart" aria-hidden="true" data-toggle="modal" data-target="#exampleModal22"></i> Comprar</a>
+							  	</div>
+							</div>
+						</div>	
 				  	</div>
 			</div>
 			<div class="card">
@@ -201,7 +251,17 @@
 						<h6>ALOJAMIENTO</h6>
 						<h5 class="card-title"> en Miami desde Santiago de Chile</h5>
 						<p class="card-text"><small class="text-muted">DESDE</small></p>
-						<h5 class="card-title"> $ 21.675</h5>
+						<div class="container">
+							<div class="row">
+							  	<div class="col-sm">
+									<br>
+									<h5 class="card-title"> $ 21.675</h5>
+							  	</div>
+							  	<div class="col-sm">
+									<a class="btn btn-danger mr-sm-5" id="btn_comprar6" data-toggle="modal" data-target="#exampleModal22"><i class="fa fa-shopping-cart" aria-hidden="true" data-toggle="modal" data-target="#exampleModal22"></i> Comprar</a>
+							  	</div>
+							</div>
+						</div>
 			  		</div>
 			</div>
 		</div>
@@ -214,7 +274,7 @@
 		</div>
 	</div>
 	<!-- Modal -->
-	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal fade" id="modaliniciosesion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="modal-header">
@@ -243,7 +303,201 @@
 		</div>
 		</div>
 	</div>
+	<!-- Modal 22-->
+	<div>
+		<div class="modal fade" id="exampleModal22" tabindex="-1" aria-labelledby="exampleModalLabel22" aria-hidden="true">
+			<div class="modal-dialog" >
+			<div class="modal-content" id="formularioCompra">
+				<div class="modal-header">
+					<h5 class="modal-title" id="lbl_ingresarDatos">DATOS PASAJEROS</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="form-group fa">
+						<div class="form-row">
+							<div class="form-group col-md-6" id="ejecutar">
+								<center><label id="lbl_valorPersona"> Valor por persona $ </label></center>
+							</div>
+							<div class="form-group col-md-6">
+								<input type="text" class="form-control" id="txt_valorPack" readonly>
+							</div>	
+						</div>
+						<div>
+							<input type="text" class="form-control fa" id="txt_nombre" aria-describedby="emailHelp" placeholder=" &#xf007; Nombres">
+						</div>
+						<div class="row">
+							<div class="col">
+								<br>
+								  <input type="text" class="form-control fa" id="txt_primerApellido" aria-describedby="emailHelp" placeholder=" &#xf007; Primer apellido">
+							</div>
+							<div class="col">
+								<br>
+								  <input type="text" class="form-control fa" id="txt_segundoApellido" aria-describedby="emailHelp" placeholder=" &#xf007; Segundo apellido">
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<div class="col mt-sm-3" id="radioBottonForm">
+								<div class="form-check form-check-inline" id="rbt_documento" >
+									<input class="form-check-input" type="radio" name="radioDoc" id="rbt_cedula" value="option1" checked>
+									<label class="form-check-label" for="inlineRadio1" id="lbl_cedula"><small>Cedula identidad</small></label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input class="form-check-input" type="radio" name="radioDoc" id="rbt_pasaporte" value="option2">
+									<label class="form-check-label" for="inlineRadio2" id="lbl_pasaporte"><small>Pasaporte</small></label>
+								</div>
+							</div>
+							<div class="col">
+								  <input type="text" class="form-control fa" id="txt_numeroDoc" aria-describedby="emailHelp" placeholder="&#xf887; Número de documento">
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<br>
+							<div class="col mt-sm-3" id="rbt_genero">
+								<div class="form-check form-check-inline">
+									<input class="form-check-input" type="radio" name="inlineRadioOptions2" id="rbt_masculino" value="option1">
+									<label class="form-check-label" for="inlineRadio1" id="lbl_masculino"><small>Masculino</small></label>
+								</div>
+								<div class="form-check form-check-inline ml-sm-4">
+									<input class="form-check-input" type="radio" name="inlineRadioOptions2" id="rbt_femenino" value="option2">
+									<label class="form-check-label" for="inlineRadio2" id="lbl_femenino"><small>Femenino</small></label>
+								</div>
+							</div>
+							<div class="col">
+								<div class="form-group">
+									<input type="text" class="form-control" id="txt_cantidadPersonas" placeholder=" &#xf0c0; Cantidad de personas">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<div class="form-group">
+									<select class="form-control" id="cmb_indicador" name="nombreSelect">
+									  <option value="0">-- Seleccione Moneda--</option>
+									  <option value="2">Dolar</option>
+									  <option value="2">Euro</option>
+									  <option value="3">UF</option>
+									</select>
+								</div>
+							</div>
+							<div class="col">
+								<div class="form-group">
+									<input type="text" class="form-control" id="txt_valorMoneda" readonly placeholder=" &#xf155; Valor Moneda">
+								</div>
+							</div>
+						</div>
+						
+						<select class="custom-select my-1 mr-sm-2" id="cmb_descuento">
+							<option selected value="0">Aplica tu cupón de descuento</option>
+							<option value="1">Descuento 10%</option>
+							<option value="2">Descuento 20%</option>
+							<option value="3">Descuento 30%</option>
+						</select>
+						<div>
+							<br>
+							<h5 class="modal-title" id="lbl_detalle">DETALLE DEL PAGO</h5>
+							<div><br></div>
+						</div>
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<input type="text" class="form-control" id="txt_valorPersona" readonly>
+							</div>
+							<div class="form-group col-md-6">
+								<input type="text" class="form-control" id="txt_valorTotal" readonly>
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<input type="text" class="form-control" id="txt_valorPersonaMoneda" readonly>
+							</div>
+							<div class="form-group col-md-6">
+								<input type="text" class="form-control" id="txt_valorTotalMoneda" readonly>
+							</div>	
+						</div>
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<input type="text" class="form-control" id="txt_ahorroPersonaMoneda" readonly>
+							</div>
+							<div class="form-group col-md-6">
+								<input type="text" class="form-control" id="txt_ahorroTotalMoneda" readonly>
+							</div>	
+						</div>
+				  	</div>
+				<div class="modal-footer">
+				<div class="form-group form-check">
+					<input type="checkbox" class="form-check-input" id="chx_recordarme">
+					<label class="form-check-label" for="exampleCheck1" id="lbl_recordarme">Recordarme</label>
+				</div>
+				<button type="button" id="btn_consultar" class="btn btn-primary">Cotizar</button>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+	<!--Modal registro-->
+	<div class="modal fade" id="modalregistro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="exampleModalLabel">Registrate</h5>
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+			  <div class="modal-body">
+			  <div class="form-group">
+				  <label for="exampleInputEmail1">Nombre Completo</label>
+				  <input type="text" class="form-control" id="txt_nombre">
+	  
+			  <div class="form-group">
+				<label for="exampleInputEmail1">Correo Electrónico</label>
+				<input type="email" class="form-control" id="txt_correo" > 
+	  
+				<div class="form-group">
+				  <label for="contrasena">Contraseña</label>
+				  <input type="password" class="form-control" id="txt_contrasena" >
+				</div>
+				<div class="form-group">
+				  <label for="confirmarContrasena">Confirmar Contraseña</label>
+				  <input type="password" class="form-control" id="txt_confirmarContrasena">
+	  
+				  <br/>
+				  
+				  <div class="form-check form-check-inline">
+					  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="rbt_radio1" value="option1">
+					  <label class="form-check-label" for="inlineRadio1">Masculino</label>
+					</div>
+					<div class="form-check form-check-inline">
+					  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="rbt_radio2" value="option2">
+					  <label class="form-check-label" for="inlineRadio2">Femenino</label>
+					</div>
+					</div>
+				</div>
+			  </div>
+			</div>
+			<div class="text-center">
+	  
+			  <button type="button" onclick="fn_mostrarEtiquetas();" class="btn btn-primary">Registrarse</button>  
+	  
+		  <small id="lbl_nombre" class="form-text text-danger">Ingrese su nombre</small>
+		  <small id="lbl_correo" class="form-text text-danger">Ingrese un correo</small>
+		  <small id="lbl_contrasena" class="form-text text-danger">Ingrese una contraseña</small>
+		  <small id="lbl_confirmarContrasena" class="form-text text-danger">Ingresar contraseña nuevamente</small>
+		  <small id="lbl_genero" class="form-text text-danger">Ingrese genero </small>
+		  <small id="lbl_confirmacion" class="form-text text-danger">Las contraseñas no coinciden</small>
+		  <small id="lbl_sucess" class="form-text text-success">Usuario registrado correctamente</small>
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	  </div>
+
 	</body>
+	<script src="js/funciones.js"></script>
 	<footer>
 		<div class="container mt-5 pt-5 text-center">
 			<a href="https://www.instagram.com/?hl=es-la" target="_blank"><i class="fa fa-instagram fa-1x mr-sm-5" id="icon1" aria-hidden="true"></i></a>

@@ -72,6 +72,9 @@ iframe{
 	margin-bottom: 10px;
 	padding-bottom: 20px;
 }
+.card{
+	border-radius: 4%;
+}
 
 #caruselofertas{
   	height: 350px;
@@ -172,9 +175,40 @@ img.mediana{
 .fechas{
 	display: inline;
 }
-
-.img-paquete{
-	max-width: 75%;
-	padding-left: 0px;
-	padding-right: 0px;
+/*******************formulario****************************/
+.modal-content{
+	width: auto;
+}
+#formularioCompra{
+	background: rgb(231, 233, 235);
+}
+#cmb_descuento{
+	background: rgb(236, 194, 56);
+	color: rgb(0, 0, 0);
+	font-family: Helvetica;
+}
+#radioBottonForm{
+	color: rgb(0, 0, 0);
+	font-size:small;
+	font-family: Helvetica;
+}
+#rbt_genero, #lbl_valorPersona, #txt_valorPack{
+	color: rgb(0, 0, 0);
+	font-size:small;
+	font-family: Helvetica;
+}
+#lbl_ingresarDatos, #lbl_detalle, #chx_recordarme, #btn_consultar, #lbl_valorPersona{
+	font-family: Helvetica;
+}
+#txt_valorPersona, #txt_valorTotal{
+	color: rgb(255, 255, 255);
+	background-color: rgb(57, 163, 66);
+}
+#txt_valorTotalMoneda, #txt_ahorroPersonaMoneda, #txt_ahorroTotalMoneda, #txt_valorPersonaMoneda{
+	color: rgb(0, 0, 0);
+	background-color: rgb(205, 245, 207);
+}
+#txt_valorPack{
+	border-color: rgb(245, 225, 42);
+	background-color: rgb(194, 194, 194);
 }

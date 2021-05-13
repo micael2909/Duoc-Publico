@@ -11,6 +11,8 @@
 		<link rel="icon" type="image/png" href="./imagen/logo.png" />
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 		<!--<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css">-->
+		<link rel='stylesheet' type='text/css' media='screen' href='fontawesome-free/css/all.min.css'>
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 	</head>
 	<body>
 	<div class="cabecera ">
@@ -20,43 +22,41 @@
 				<h7 id="tituloprincipal"><b>EGERIA TRAVELS</b></h1>
 			</div>
 			<div class="col">
-				<div class="barra1">
-					<nav class="navbar navbar-expand-lg navbar-light bg-light" >
-						<a class="navbar-brand " href="#"></a>
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-						  <span class="navbar-toggler-icon"></span>
-						</button>
-						<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-						  <div class="navbar-nav col-xl" id="ses">	
-							<a class="btn btn-light mr-sm-5" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-user fa-2x mr-sm-2" aria-hidden="true" data-toggle="modal" data-target="#exampleModal"></i> Iniciar Sesión</a>
-							<a class="btn btn-light mr-sm-5" href=""><i class="fa fa-paper-plane fa-2x mr-sm-2" aria-hidden="true"></i>Mis viajes</a>
-							<a class="btn btn-light mr-sm-5" href="contacto.html"><i class="fa fa-question-circle fa-2x mr-sm-2" aria-hidden="true"></i>Ayuda</a>
-						  </div>
-						</div>
-					</nav>
-				</div>
+				<nav class="navbar navbar-expand-lg navbar-light bg-light rounded-bottom border">
+					<a class="navbar-brand"></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navcontrol1" aria-controls="navcontrol1" aria-expanded="false" aria-label="Toggle navigation">
+					  <span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse container" id="navcontrol1">
+					  <div class="navbar-nav col-xl" id="ses">	
+						<a class="btn btn-light mr-sm-4" data-toggle="modal" data-target="#modaliniciosesion"><i class="fa fa-user mr-sm-1" aria-hidden="true"></i> Iniciar Sesión</a>
+						<a class="btn btn-light mr-sm-4" data-toggle="modal" data-target="#modalregistro"><i class="fa fa-user-plus mr-sm-1" aria-hidden="true"></i> Registrarse</a>
+						<a class="btn btn-light mr-sm-4" href=""><i class="fa fa-paper-plane mr-sm-1" aria-hidden="true"></i>Mis viajes</a>
+						<a class="btn btn-light mr-sm-4" href="contacto.html"><i class="fa fa-question-circle mr-sm-1" aria-hidden="true"></i>Ayuda</a>
+					  </div>
+					</div>
+				</nav>
+		</div>
+		<div class="col" id="ee">
+			<div class="barr2">
+				<nav class="navbar navbar-expand-lg navbar-light bg-light rounded-lg">
+					<a class="navbar-brand" href="#"></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navcontrol2" aria-controls="navcontrol2" aria-expanded="false" aria-label="Toggle navigation">
+					  <span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse container" id="navcontrol2">
+					  <div class="navbar-nav col-xl">
+						<a class="nav-link mr-sm-5" href=""><i class="fa fa-plane fa-2x mr-sm-2" aria-hidden="true"></i> Vuelos<span class="sr-only">(current)</span></a>
+						<a class="nav-link mr-sm-5" href="paquetes.html"><i class="fa fa-shopping-bag fa-2x mr-sm-2" aria-hidden="true"></i>Paquetes</a>
+						<a class="nav-link active mr-sm-5" href="alojamiento.html"><i class="fa fa-bed fa-2x mr-sm-2" aria-hidden="true"></i>Alojamiento</a>
+						<a class="nav-link mr-sm-5" href="ofertas.html"><i class="fa fa-binoculars fa-2x mr-sm-2" aria-hidden="true"></i>Ofertas</a>
+						<a class="nav-link mr-sm-5" href="asistenciaDeViaje.html"><i class="fa fa-phone fa-2x mr-sm-2" aria-hidden="true"></i> Asistencia de viajes</a>
+						<a class="nav-link mr-sm-5" href="traslado.html"><i class="fa fa-bus fa-2x mr-sm-2" aria-hidden="true"></i> Traslados</a>
+					  </div>
+					</div>
+				</nav>
 			</div>
-			<div class="w-100"></div>
-			<div class="col" id="ee">
-				<div class="barr2">
-					<nav class="navbar navbar-expand-lg navbar-light bg-light">
-						<a class="navbar-brand" href="#"></a>
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-						  <span class="navbar-toggler-icon"></span>
-						</button>
-						<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-						  <div class="navbar-nav col-xl">
-							<a class="nav-link mr-sm-5" href="index.html"><i class="fa fa-plane fa-2x mr-sm-2" aria-hidden="true"></i> Vuelos<span class="sr-only">(current)</span></a>
-							<a class="nav-link mr-sm-5" href="paquetes.html"><i class="fa fa-shopping-bag fa-2x mr-sm-2" aria-hidden="true"></i>Paquetes</a>
-							<a class="nav-link active mr-sm-5" href="alojamiento.html"><i class="fa fa-bed fa-2x mr-sm-2" aria-hidden="true"></i>Alojamiento</a>
-							<a class="nav-link mr-sm-5" href="ofertas.html"><i class="fa fa-binoculars fa-2x mr-sm-2" aria-hidden="true"></i>Ofertas</a>
-							<a class="nav-link mr-sm-5" href="asistenciaDeViaje.html"><i class="fa fa-phone fa-2x mr-sm-2" aria-hidden="true"></i> Asistencia de viajes</a>
-							<a class="nav-link mr-sm-5" href="traslado.html"><i class="fa fa-bus fa-2x mr-sm-2" aria-hidden="true"></i> Traslados</a>
-						  </div>
-						</div>
-					</nav>
-				</div>
-			</div>
+		</div>
 		</div>
 	</div>
 	<section class="formulario mt-3 pt-3">
@@ -267,7 +267,7 @@
 		</div>
 	</div>
 	<!-- Modal -->
-	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal fade" id="modaliniciosesion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="modal-header">
@@ -296,7 +296,68 @@
 		</div>
 		</div>
 	</div>
+
+	<!--Modal registro-->
+	<div class="modal fade" id="modalregistro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="exampleModalLabel">Registrate</h5>
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+			  <div class="modal-body">
+			  <div class="form-group">
+				  <label for="exampleInputEmail1">Nombre Completo</label>
+				  <input type="text" class="form-control" id="txt_nombre">
+	  
+			  <div class="form-group">
+				<label for="exampleInputEmail1">Correo Electrónico</label>
+				<input type="email" class="form-control" id="txt_correo" > 
+	  
+				<div class="form-group">
+				  <label for="contrasena">Contraseña</label>
+				  <input type="password" class="form-control" id="txt_contrasena" >
+				</div>
+				<div class="form-group">
+				  <label for="confirmarContrasena">Confirmar Contraseña</label>
+				  <input type="password" class="form-control" id="txt_confirmarContrasena">
+	  
+				  <br/>
+				  
+				  <div class="form-check form-check-inline">
+					  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="rbt_radio1" value="option1">
+					  <label class="form-check-label" for="inlineRadio1">Masculino</label>
+					</div>
+					<div class="form-check form-check-inline">
+					  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="rbt_radio2" value="option2">
+					  <label class="form-check-label" for="inlineRadio2">Femenino</label>
+					</div>
+					</div>
+				</div>
+			  </div>
+			</div>
+			<div class="text-center">
+	  
+			  <button type="button" onclick="fn_mostrarEtiquetas();" class="btn btn-primary">Registrarse</button>  
+	  
+		  <small id="lbl_nombre" class="form-text text-danger">Ingrese su nombre</small>
+		  <small id="lbl_correo" class="form-text text-danger">Ingrese un correo</small>
+		  <small id="lbl_contrasena" class="form-text text-danger">Ingrese una contraseña</small>
+		  <small id="lbl_confirmarContrasena" class="form-text text-danger">Ingresar contraseña nuevamente</small>
+		  <small id="lbl_genero" class="form-text text-danger">Ingrese genero </small>
+		  <small id="lbl_confirmacion" class="form-text text-danger">Las contraseñas no coinciden</small>
+		  <small id="lbl_sucess" class="form-text text-success">Usuario registrado correctamente</small>
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	  </div>
+	
 	</body>
+	<script src="js/funciones.js"></script>
 	<footer>
 		<div class="container mt-5 pt-5 text-center">
 			<a href="https://www.instagram.com/?hl=es-la" target="_blank"><i class="fa fa-instagram fa-1x mr-sm-5" id="icon1" aria-hidden="true"></i></a>
