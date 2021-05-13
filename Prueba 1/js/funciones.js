@@ -339,10 +339,10 @@ function fn_mostrarEtiquetas(){
           if (nombre!="" 
             && contrasena==confirmarContrasena 
             && correo!="" 
-            && (document.getElementById('rbt_radio1').checked != false 
+            && ((document.getElementById('rbt_radio1').checked != false 
             && document.getElementById('rbt_radio2').checked != true) 
             || (document.getElementById('rbt_radio1').checked != true 
-            && document.getElementById('rbt_radio2').checked != false)){
+            && document.getElementById('rbt_radio2').checked != false))){
             document.getElementById('lbl_sucess').style.visibility="visible";          
           }
           else {
